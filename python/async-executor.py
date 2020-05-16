@@ -26,7 +26,7 @@ errors_indices = []
 
 max_parallel_executions = 1000
 
-work_count = 1000
+work_count = 100
 work_items = range(work_count)
 
 # Check status upon 1% completion
