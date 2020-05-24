@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.FileSystemNotFoundException;
 import java.nio.file.FileSystems;
@@ -37,10 +38,14 @@ public class Hello {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Hello from Java");
 
-        new Hello().sayHello();
+        ApiServer apiServer = new ApiServer();
+
+        //new Hello().sayHello();
+
+        apiServer.serve();
 
     }
 

@@ -1,4 +1,5 @@
 #include "Hello.h"
+#include "ApiServer.h"
 #include <iostream>
 #include <chrono>
 #include <ctime>
@@ -20,4 +21,17 @@ JNIEXPORT jstring JNICALL Java_Hello_sayHello(JNIEnv *env, jobject thisObject)
     }
 
     return env->NewStringUTF(hello.c_str());
+}
+
+long fib(long n) 
+{ 
+    if (n <= 1) 
+        return n; 
+    return fib(n-1) + fib(n-2); 
+} 
+
+
+JNIEXPORT jlong JNICALL Java_ApiServer_fib(JNIEnv *, jobject thisObj, jlong in)
+{
+    return fib(in);
 }

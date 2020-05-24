@@ -14,7 +14,7 @@ g++ -shared -fPIC -o libhello.so Hello.o -lc
 javac Hello.java
 
 # Package JAR
-jar cmf Hello.mf Hello.jar Hello.class libhello.so
+jar cmf Hello.mf Hello.jar *.class libhello.so
 
 # Execute JAR
 java -jar Hello.jar
