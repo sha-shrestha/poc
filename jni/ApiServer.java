@@ -5,6 +5,7 @@ import static java.util.stream.Collectors.toList;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.URLDecoder;
 import java.util.Arrays;
@@ -23,15 +24,19 @@ class ApiServer {
     public void serve() throws IOException {
         int serverPort = 8000;
         HttpServer server = HttpServer.create(new InetSocketAddress(serverPort), 0);
+        String thisHost = InetAddress.getLocalHost().getHostName();
+        String thisIp = InetAddress.getLocalHost().getHostAddress();
         server.createContext("/api/fib", (exchange -> {
 
             if ("GET".equals(exchange.getRequestMethod())) {
                 Map<String, List<String>> params = splitQuery(exchange.getRequestURI().getRawQuery());
 
                 String noInputText = "1";
-                String input = params.getOrDefault("input", List.of(noInputText)).stream().findFirst().orElse(noInputText);
+                String input = params.getOrDefault("input", List.of(noInputText)).stream().findFirst()
+                        .orElse(noInputText);
                 Integer inputValue = Integer.parseInt(input);
-                String respText = String.format("Fibonacci of %s is %s\n", inputValue, fib(inputValue));
+                String respText = String.format("Fibonacci of %s is %s\n\nComputed by %s (IP: %s)\n\n", inputValue,
+                        fib(inputValue), thisHost, thisIp);
                 exchange.sendResponseHeaders(200, respText.getBytes().length);
                 OutputStream output = exchange.getResponseBody();
                 output.write(respText.getBytes());
