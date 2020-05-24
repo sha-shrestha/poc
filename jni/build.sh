@@ -34,7 +34,6 @@ docker build -t hello:latest .
 # kubectl run hello --image=hello:latest --image-pull-policy=Never
 
 kubectl apply -f deploy.yaml
-kubectl apply -f services.yaml
 kubectl patch deployment hello-deployment -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
 
 # kubectl describe deployment hello-deployment
