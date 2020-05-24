@@ -17,4 +17,35 @@ javac Hello.java
 jar cmf Hello.mf Hello.jar *.class libhello.so
 
 # Execute JAR
-java -jar Hello.jar
+# java -jar Hello.jar
+
+# Start minikube
+minikube start --driver=virtualbox
+
+# Set docker env
+eval $(minikube docker-env)
+
+docker build -t hello:latest .
+# docker run -p 8000:8000 hello:latest
+
+# minikube delete
+
+# Run in minikube
+# kubectl run hello --image=hello:latest --image-pull-policy=Never
+
+kubectl apply -f deploy.yaml
+kubectl apply -f services.yaml
+kubectl patch deployment hello-deployment -p "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"date\":\"`date +'%s'`\"}}}}}"
+
+# kubectl describe deployment hello-deployment
+
+# Check that it's running
+# kubectl get pods -o wide
+# kubectl get pods -l app=hello
+# kubectl get deployments hello-deployment
+# kubectl describe deployments hello-deployment
+# kubectl get replicasets
+# kubectl describe replicasets
+# kubectl describe services hello-service
+
+minikube service hello-service --url

@@ -31,7 +31,7 @@ class ApiServer {
                 String noInputText = "1";
                 String input = params.getOrDefault("input", List.of(noInputText)).stream().findFirst().orElse(noInputText);
                 Integer inputValue = Integer.parseInt(input);
-                String respText = String.format("Fibonacci of %s is %s", inputValue, fib(inputValue));
+                String respText = String.format("Fibonacci of %s is %s\n", inputValue, fib(inputValue));
                 exchange.sendResponseHeaders(200, respText.getBytes().length);
                 OutputStream output = exchange.getResponseBody();
                 output.write(respText.getBytes());
