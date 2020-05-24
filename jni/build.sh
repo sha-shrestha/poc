@@ -2,6 +2,9 @@
 
 JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
+# The following shoud be run to generate the boilerplate CPP code
+# javac -h . Hello.java
+
 rm *.so || true
 rm *.class || true
 

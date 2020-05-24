@@ -1,7 +1,5 @@
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Field;
 import java.nio.file.FileSystemNotFoundException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
@@ -19,7 +17,7 @@ public class Hello {
             String JNI_LOCAL_TEMP_PATH = file.getAbsolutePath().toString();
 
             InputStream link = (new Hello().getClass().getResourceAsStream(LIB_NAME + LIB_EXT));
-            
+
             System.out.println("Instantiating JNI lib: " + JNI_LOCAL_TEMP_PATH);
             Files.copy(link, file.getAbsoluteFile().toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
 
@@ -35,8 +33,8 @@ public class Hello {
                 }
             }
         } catch (Exception e) {
-            //TODO: handle exception
-        }       
+            // TODO: handle exception
+        }
     }
 
     public static void main(String[] args) {
@@ -47,7 +45,6 @@ public class Hello {
     }
 
     public native String sayHello();
-
 
     private static boolean isPosixCompliant() {
         try {
