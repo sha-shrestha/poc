@@ -4,11 +4,6 @@
 #include <ctime>
 #include <thread>
 
-/*
- * Class:     com_baeldung_jni_HelloWorldJNI
- * Method:    sayHello
- * Signature: ()Ljava/lang/String;
- */
 JNIEXPORT jstring JNICALL Java_Hello_sayHello(JNIEnv *env, jobject thisObject)
 {
     std::string hello = "Hello from C++";

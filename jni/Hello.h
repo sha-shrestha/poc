@@ -8,12 +8,8 @@
 extern "C"
 {
 #endif
-  /*
- * Class:     Hello
- * Method:    sayHello
- * Signature: ()Ljava/lang/String;
- */
-  JNIEXPORT jstring JNICALL Java_Hello_sayHello(JNIEnv *, jobject);
+
+JNIEXPORT jstring JNICALL Java_Hello_sayHello(JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }
