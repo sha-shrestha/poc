@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-deployment
 spec:
-  replicas: 10
+  replicas: 3
   selector:
     matchLabels:
       app: hello
@@ -14,10 +14,10 @@ spec:
         app: hello
     spec:
       containers:
-      - image: hello:latest
+      - image: gcr.io/shailesh-shrestha-1/hello:latest
         name: hello
         imagePullPolicy: IfNotPresent
-        # imagePullPolicy: Always
+        # imagePullPolicy: Alwaysd
         resources: {}
         ports:
           - containerPort: 8000

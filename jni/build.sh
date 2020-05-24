@@ -49,3 +49,7 @@ kubectl patch deployment hello-deployment -p "{\"spec\":{\"template\":{\"metadat
 # kubectl describe services hello-service
 
 minikube service hello-service --url
+
+# This is to expose the service to the internet when running in GKE
+
+# kubectl expose deployment hello-deployment --type=LoadBalancer --port 80 --target-port 8000
