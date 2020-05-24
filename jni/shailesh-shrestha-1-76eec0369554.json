@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "shailesh-shrestha-1",
+  "private_key_id": "76eec0369554170400405a3481413893b68cf3f8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQClT8AQ2VFrGbKJ\nCUh7KAPzePXtJtupgDbqWRtSzj9vOOkO00M2nIByNgzj/dioaAZ4P3EW7h+AkDss\nO7L/ykt2VkZXt3ZwbUmPevlkclgKiPpKWejNRbYu/mN8Ih/MCinF4Ru5nDCothII\nz7oYqK5CYqxHgEYEvHsh2dOJ4lCFWD7Q242D2FA4jolLI9lfoJ9YlfS4OiCisbnu\nL5i5wuxKR8QZKVh1PjPGn+IqfgmjZGS3roiMQ9+/nOgpLzk+sJRjSPvA0usIiQiR\nMuLpPuQh4LW5dFnv+NxX3EXBgJEvR6hDkUhMay5yBkFviIluQ45rz3+n71kBLKMA\nfoxCsAgVAgMBAAECggEAFuOJb5Z0yv77tN9XrVG3kP+3vAvW0KEjjrl4FTQ1x/PE\ndTHe4Gdf84W0rYwJcnE2KsfMo++kO1FSbXKgpgEVB2q1AlKGhX+O9rJWE0iFFIRY\ndMX+fA7scD+hzQoOhq+w4/33WvDw3dND1lDTbrRLAynAD9sHbC11YRT/e1vIvrA6\n1D5MsPdWlDClWCK1CqbW11oLTLGV7lD/J0HNC9sfSZMTpn5mHys3ia27mXYcvh2X\n0SbfT6s4qzdRLlHV8Pj31N9Y3dMH49Mf4makbOzMg8/bvbHRiN4XSA25CmEeJFUc\npswi5/zkh/VMM4UgsuwG8lUFDu74U+yJoD6a0vF36wKBgQDjkcQ7E53AZAph1B9C\nmeQuAWeFqUUKtf6NDxQ1KXivLQ4cariZ4klM3O3Ud8IW89baRhLbq0ysd+Bk8Ga5\niQiN1LRNWFgxP+2STQsjUNdhp7WI/3c1r4lxyJBvKCD+sgXv1hxKnI8wzoqs7Wnz\n3/2fRCCp/E3MuMC0+XZq8gDALwKBgQC59tKSQqzODQJP9vLDbmP6ydyMjoVeEyLT\nMB081pqB0Z76AuVuNw+NQOaD5DKnSGokMl2cK+LiBHciBLLhkqhC9C+RTXqPT1VD\nxVPhqzS613IWs22JSZ6PFeBmWHZp9aJ6faNJJoKpan/Zh3501Bdlx+ZMORz7Zg/j\nClSsBJWG+wKBgQDgZiyJ1J4JyJw0O2dX1Ugb1WavdmqOVUfc8LGMeoh2tIblnpbJ\np0mAcZpTmIPa/jcupUqTMic5KjwrTKL+8RFuSgBBBIxyhAdP7Ii/GkhIE4f+v2pd\nleqCOLOz6G4guIsCJK9hI2BPUFuOic2gnY8KLbPH6vMMnGHqEtOiQWBcIQKBgEnL\nx94gtWCDSxKehdHGAcjoyCvC9uvRHjW+VyvoYaH4pGTEN3WYRgSg55kZOnylwPEi\nR4GM7NkSOpB2WuInB7yiGCpKG8O5ELX3HYVlImSu0GhvxZ0AaPqRDN6wZjVAM7z2\nFJEXxiwixh91pFoKPEq4nAxNcdHVu6I2XEly/D93AoGARcrnDap7POzrGFCGm0k8\nWBmzc7bRgVxbizFhuRsEWd1LhU4lEus/UA0Z0qQJ77FIF+j7KesXBWDRMYcJ1RNu\n0ZXXMeJVorQ3oOQygIhhHMmc7sk/ZoQjFkFlX05WAscXkivmHu0HqFV/QEPzGmqX\nMi7ol9/WTFklVCF/EixIN2I=\n-----END PRIVATE KEY-----\n",
+  "client_email": "registry-pusher@shailesh-shrestha-1.iam.gserviceaccount.com",
+  "client_id": "115856870888026103661",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/registry-pusher%40shailesh-shrestha-1.iam.gserviceaccount.com"
+}
